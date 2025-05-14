@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { MotionDiv } from '@/components/ui/motion';
+import logoImage from "@assets/Arisole logo1.png";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,7 +37,13 @@ export default function Navbar() {
     <nav className={`sticky-nav fixed w-full z-50 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="#" className="text-2xl font-black text-primary">ARISOLE</a>
+          <a href="#" className="flex items-center">
+            <img 
+              src={logoImage} 
+              alt="Arisole Logo" 
+              className="h-10 md:h-12" 
+            />
+          </a>
         </div>
         
         <div className="hidden md:flex items-center space-x-8">

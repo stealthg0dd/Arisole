@@ -1,5 +1,6 @@
 import { MotionDiv, fadeIn } from '@/components/ui/motion';
 import { Instagram, Twitter, Facebook, Youtube } from "lucide-react";
+import logoImage from "@assets/Arisole logo1.png";
 
 export default function Footer() {
   const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -18,7 +19,13 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <MotionDiv className="md:col-span-2" {...fadeIn(0.1)}>
-            <a href="#" className="text-2xl font-black text-white mb-4 inline-block">ARISOLE</a>
+            <a href="#" className="inline-block mb-4">
+              <img 
+                src={logoImage} 
+                alt="Arisole Logo" 
+                className="h-12 mb-4" 
+              />
+            </a>
             <p className="text-white/70 mb-6 max-w-md">
               Revolutionizing athletic footwear with the world's first truly modular shoe system.
               One shoe base, multiple detachable soles, endless possibilities.
