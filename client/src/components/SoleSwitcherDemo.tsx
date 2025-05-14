@@ -44,10 +44,10 @@ export default function SoleSwitcherDemo() {
   ];
 
   const shoeImages = {
-    trail: 'https://pixabay.com/get/gaefe70f115067b2ac7803818948ddd8f854656853ac555e5396b3adb552c830e9139fe4afa6bcae0b645e55eda6d5e8be2d329ddff015a2835c4cea66269d87d_1280.jpg',
-    tennis: 'https://images.unsplash.com/photo-1617695103171-8f9c25f014f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80',
-    street: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80',
-    gym: 'https://images.unsplash.com/photo-1626248801379-51a0748a5f96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80'
+    trail: '/arisole-shoe.png',
+    tennis: '/arisole-shoe.png',
+    street: '/arisole-shoe.png',
+    gym: '/arisole-shoe.png'
   };
 
   const [activeSole, setActiveSole] = useState<string>('trail');

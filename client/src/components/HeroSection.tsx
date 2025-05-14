@@ -8,11 +8,11 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="pt-28 pb-16 md:py-32 gradient-bg relative overflow-hidden">
+    <section className="pt-28 pb-24 md:py-32 gradient-bg relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center">
           <MotionDiv 
-            className="md:w-1/2 mb-12 md:mb-0 z-10"
+            className="md:w-1/2 mb-16 md:mb-0 z-10"
             {...slideInFromLeft()}
           >
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
@@ -48,20 +48,22 @@ export default function HeroSection() {
           </MotionDiv>
           
           <MotionDiv 
-            className="md:w-1/2 relative z-10"
+            className="md:w-1/2 relative z-10 flex justify-center items-center"
             {...slideInFromRight(0.2)}
           >
-            <img 
-              src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" 
-              alt="Arisole modular shoe" 
-              className="w-full h-auto rounded-2xl shadow-2xl transform hover:rotate-1 transition-transform duration-500" 
-            />
-            <MotionDiv 
-              className="absolute -bottom-6 -right-6 bg-secondary text-white rounded-full p-4 shadow-lg"
-              {...fadeIn(0.5)}
-            >
-              <span className="font-bold">Revolutionary</span>
-            </MotionDiv>
+            <div className="relative w-[90%] md:w-[100%]">
+              <img 
+                src="/arisole-shoe.png" 
+                alt="Arisole modular shoe" 
+                className="w-full h-auto object-contain transform hover:rotate-1 transition-transform duration-500" 
+              />
+              <MotionDiv 
+                className="absolute -bottom-6 right-0 bg-primary text-white rounded-full p-4 shadow-lg"
+                {...fadeIn(0.5)}
+              >
+                <span className="font-bold">Revolutionary</span>
+              </MotionDiv>
+            </div>
           </MotionDiv>
         </div>
       </div>
