@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { MotionDiv } from '@/components/ui/motion';
+import LogoImage from './LogoImage';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,11 +38,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
-            <img 
-              src="/src/assets/Arisole logo1.png" 
-              alt="Arisole Logo" 
-              className="h-10 md:h-12" 
-            />
+            <LogoImage className="h-10 md:h-12 w-auto" />
           </a>
         </div>
         
