@@ -1,6 +1,5 @@
 import { MotionDiv, fadeIn } from '@/components/ui/motion';
 import { Instagram, Twitter, Facebook, Youtube } from "lucide-react";
-import logoImage from "@assets/Arisole logo1.png";
 
 export default function Footer() {
   const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -21,7 +20,7 @@ export default function Footer() {
           <MotionDiv className="md:col-span-2" {...fadeIn(0.1)}>
             <a href="#" className="inline-block mb-4">
               <img 
-                src={logoImage} 
+                src="/src/assets/Arisole logo1.png" 
                 alt="Arisole Logo" 
                 className="h-12 mb-4" 
               />
