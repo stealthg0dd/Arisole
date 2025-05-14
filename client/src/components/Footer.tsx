@@ -19,8 +19,8 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <MotionDiv className="md:col-span-2" {...fadeIn(0.1)}>
-            <a href="#" className="inline-block mb-4">
-              <LogoImage className="h-12 w-auto mb-4" darkMode={true} />
+            <a href="#" className="inline-block mb-6">
+              <LogoImage className="h-20 w-auto mb-4" darkMode={true} />
             </a>
             <p className="text-white/70 mb-6 max-w-md">
               Revolutionizing athletic footwear with the world's first truly modular shoe system.
