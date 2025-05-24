@@ -70,6 +70,14 @@ export default function Navbar() {
           >
             Technology
           </a>
+          <Button 
+            onClick={() => setLocation('/lab')}
+            variant="ghost"
+            className="font-medium hover:text-primary transition-colors px-0 h-auto bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent hover:from-primary/80 hover:to-blue-500/80"
+          >
+            <Brain className="mr-2 h-4 w-4" />
+            Arisole Lab
+          </Button>
           <a 
             href="#sustainability" 
             className="font-medium hover:text-primary transition-colors"
@@ -194,6 +202,14 @@ export default function Navbar() {
             >
               Technology
             </a>
+            <Button 
+              onClick={() => { setLocation('/lab'); setMobileMenuOpen(false); }}
+              variant="outline"
+              className="w-full rounded-full bg-gradient-to-r from-primary/10 to-blue-500/10 border-primary/30"
+            >
+              <Brain className="mr-2 h-4 w-4" />
+              Arisole Lab
+            </Button>
             <a 
               href="#sustainability" 
               className="font-medium hover:text-primary transition-colors"

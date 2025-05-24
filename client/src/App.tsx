@@ -9,6 +9,7 @@ import Home from "@/pages/Home";
 import Auth from "@/pages/Auth";
 import Dashboard from "@/pages/Dashboard";
 import AdaptIQDemo from "@/pages/AdaptIQDemo";
+import ArisoleLab from "@/pages/ArisoleLab";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/auth" component={Auth} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/adaptiq-demo" component={AdaptIQDemo} />
+      <Route path="/lab" component={ArisoleLab} />
       <Route component={NotFound} />
     </Switch>
   );
