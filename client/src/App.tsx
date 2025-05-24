@@ -10,6 +10,7 @@ import Auth from "@/pages/Auth";
 import Dashboard from "@/pages/Dashboard";
 import AdaptIQDemo from "@/pages/AdaptIQDemo";
 import ArisoleLab from "@/pages/ArisoleLab";
+import EleganceBeta from "@/pages/EleganceBeta";
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/adaptiq-demo" component={AdaptIQDemo} />
       <Route path="/lab" component={ArisoleLab} />
+      <Route path="/elegance" component={EleganceBeta} />
       <Route component={NotFound} />
     </Switch>
   );
