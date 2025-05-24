@@ -16,12 +16,12 @@ export default function HeroSection() {
             {...slideInFromLeft()}
           >
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-              One Shoe.<br />
-              <span className="text-primary">All Sports.</span>
+              Modular Footwear,<br />
+              <span className="text-primary">Elegance Engineered.</span>
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-700 max-w-lg">
-              Introducing the world's first truly modular athletic shoe with interchangeable soles.
-              Switch from trail to court to street in seconds.
+              From sports to stilettos – Arisole adapts to your life, powered by wearable tech.
+              Experience the future of footwear with AI-optimized comfort and modular innovation.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a 
@@ -29,19 +29,29 @@ export default function HeroSection() {
                 onClick={(e) => handleScrollTo(e, 'waitlist')}
               >
                 <Button size="lg" className="px-8 py-4 rounded-full h-auto btn-hover transition-all text-lg w-full sm:w-auto">
-                  Join Waitlist
+                  Shop Innovation
                 </Button>
               </a>
               <a 
-                href="#demo" 
-                onClick={(e) => handleScrollTo(e, 'demo')}
+                href="/elegance"
               >
                 <Button 
                   variant="outline" 
                   size="lg" 
                   className="px-8 py-4 rounded-full border-primary text-primary hover:bg-primary/5 h-auto transition-all text-lg w-full sm:w-auto"
                 >
-                  See How It Works
+                  Join Elegance Beta
+                </Button>
+              </a>
+              <a 
+                href="/lab"
+              >
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="px-8 py-4 rounded-full border-gray-400 text-gray-700 hover:bg-gray-50 h-auto transition-all text-lg w-full sm:w-auto"
+                >
+                  Try the Demo
                 </Button>
               </a>
             </div>
